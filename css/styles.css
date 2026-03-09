@@ -1,0 +1,29 @@
+/* Un toque de elegancia: Soft Shadows y Glassmorphism sutil */
+.card-gradiente {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(226, 232, 240, 0.5);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); /* Sombra más suave */
+}
+
+/* Scrollbar personalizada para el explorador */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #cbd5e1;
+}
+
+/* Hover suave para los botones principales */
+#btnCargar, #btnBuscar {
+    transform: translateY(0);
+    transition: all 0.2s ease;
+}
+#btnCargar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 41, 59, 0.2);
+} 
